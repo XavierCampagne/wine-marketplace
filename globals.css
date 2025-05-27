@@ -1,3 +1,30 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Custom styles for dark theme and wine-inspired palette */
+body {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  font-family: 'Inter', sans-serif;
+}
+
+.product-card {
+  @apply border border-gray-700 rounded-lg p-4 bg-gray-900 transition-transform transform hover:scale-105 hover:shadow-lg;
+}
+
+.product-card h3 {
+  @apply text-lg font-bold text-white truncate;
+}
+
+.product-card p {
+  @apply text-sm text-gray-400;
+}
+
+.btn-primary {
+  @apply bg-[#800020] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#a00030] transition-colors;
+}
+
+.btn-secondary {
+  @apply bg-gray-700 text-white px-4 py-2 rounded-lg hover:bg-gray-600 transition-colors;
+}

@@ -65,19 +65,19 @@ export default function Sell() {
   };
 
   return (
-    <div className="container mx-auto p-4">
+    <div className="container mx-auto p-6">
       <h1 className="text-3xl font-bold mb-6">Sell Your Wine</h1>
-      <p className="text-gray-700 mb-6">
+      <p className="text-gray-400 mb-6">
         Fill out the form below to submit your wine bottle for sale. Our team will review and approve listings.
       </p>
-      {message && <p className="mb-4 text-red-600">{message}</p>}
+      {message && <p className="mb-4 text-red-400">{message}</p>}
       <form onSubmit={handleSubmit} className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-2xl">
         <input
           name="localite"
           value={formData.localite}
           onChange={handleChange}
           placeholder="Localité (e.g., Bordeaux)"
-          className="border p-2 rounded"
+          className="border border-gray-700 bg-gray-800 text-white p-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#800020]"
           required
         />
         <input
@@ -85,14 +85,14 @@ export default function Sell() {
           value={formData.region}
           onChange={handleChange}
           placeholder="Région (e.g., Nouvelle-Aquitaine)"
-          className="border p-2 rounded"
+          className="border border-gray-700 bg-gray-800 text-white p-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#800020]"
           required
         />
         <select
           name="type"
           value={formData.type}
           onChange={handleChange}
-          className="border p-2 rounded"
+          className="border border-gray-700 bg-gray-800 text-white p-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#800020]"
           required
         >
           <option value="">Select Type</option>
@@ -105,7 +105,7 @@ export default function Sell() {
           value={formData.appellation}
           onChange={handleChange}
           placeholder="Appellation (e.g., Saint-Emilion)"
-          className="border p-2 rounded"
+          className="border border-gray-700 bg-gray-800 text-white p-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#800020]"
           required
         />
         <input
@@ -113,7 +113,7 @@ export default function Sell() {
           value={formData.domaine}
           onChange={handleChange}
           placeholder="Domaine (e.g., Chateau La Fagnouse)"
-          className="border p-2 rounded"
+          className="border border-gray-700 bg-gray-800 text-white p-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#800020]"
           required
         />
         <input
@@ -121,14 +121,14 @@ export default function Sell() {
           value={formData.millesime}
           onChange={handleChange}
           placeholder="Vintage (e.g., 2009)"
-          className="border p-2 rounded"
+          className="border border-gray-700 bg-gray-800 text-white p-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#800020]"
         />
         <input
           name="contenance"
           value={formData.contenance}
           onChange={handleChange}
           placeholder="Contenance (e.g., 75cl)"
-          className="border p-2 rounded"
+          className="border border-gray-700 bg-gray-800 text-white p-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#800020]"
           required
         />
         <input
@@ -138,12 +138,12 @@ export default function Sell() {
           onChange={handleChange}
           placeholder="Quantity"
           min="1"
-          className="border p-2 rounded"
+          className="border border-gray-700 bg-gray-800 text-white p-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#800020]"
           required
         />
         <button
           type="submit"
-          className="bg-green-600 text-white px-6 py-3 rounded hover:bg-green-700 col-span-full"
+          className="btn-primary col-span-full"
         >
           Submit Sell Request
         </button>
